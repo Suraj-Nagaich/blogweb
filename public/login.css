@@ -1,0 +1,119 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  color: #333;
+}
+
+/* Header */
+h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Form container */
+form {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 40px 35px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 420px;
+  transition: all 0.3s ease;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #34495e;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 22px;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #f0f0f3;
+  box-shadow: inset 4px 4px 10px #d1d9e6,
+              inset -4px -4px 10px #ffffff;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3498db;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 14px;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Extra text below form */
+p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+p a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Divider */
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 25px 0;
+}
+
+/* Responsive tweak */
+@media (max-width: 480px) {
+  form {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
