@@ -99,7 +99,7 @@ blog-website
 
 ### 1. Clone Repository
 
-git clone https://github.com/yourusername/blog-website.git
+git clone https://github.com/Suraj-Nagaich/blogweb
 cd blog-website
 
 ### 2. Install Dependencies
